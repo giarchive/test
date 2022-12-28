@@ -372,11 +372,12 @@ main .inazumafont {
 	.nav_contrnt_cover {
 		width: 0%;
 		}
-	header .title {
+	header .title,header .title a:visited {
 		font-size: 1.25em;
 		position: fixed;
 		top: 0;
   		margin-left: 0.5em;
+    color: var(--black1);
 	}
 	.drawer_open {
 		position: fixed;
