@@ -209,7 +209,7 @@ main .open {
 	color: var(--orange);
 	font-weight: bold;
 }
-header a, main a:not(.not-linkhighright), aside a:not(.black) {
+main a:not(.not-linkhighright), aside a:not(.black) {
 	color: var(--blue);
 	text-decoration: none;
 }
@@ -219,8 +219,9 @@ article .black {
 main .black {
 	color: black;
 }
-main .white {
+main .white,header a {
 	color: white;
+	text-decoration: none;
 }
 main .inazumafont {
 	font-family: 'InazumaFont', sans-serif;
