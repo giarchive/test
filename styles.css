@@ -209,7 +209,7 @@ main .open {
 	color: var(--orange);
 	font-weight: bold;
 }
-main a:not(.not-linkhighright), aside a:not(.black) {
+header a, main a:not(.not-linkhighright), aside a:not(.black) {
 	color: var(--blue);
 	text-decoration: none;
 }
