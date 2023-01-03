@@ -1004,28 +1004,6 @@ main .applemusic {
     height: auto;
     opacity: 1;
 }
-/*Twitterトレンド*/
-.twitter-trend {
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
-}
-.twitter-trend-tag {
-	background-color: var(--white5);
-	padding: 1em 2rem;
-	width: calc(45% - 2rem)!important;
-	margin: 0.2rem 0.2rem!important;
-	display: inline-block;
-	 white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-@media screen and (max-width: 680px) {
-	.twitter-trend-tag {
-	width: calc(90% - 2vw)!important;
-	padding: 1vw 1vw;
-	}
-}
 
 footer {
   border-top: 1px var(--scara-2) solid;

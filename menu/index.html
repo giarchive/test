@@ -11,11 +11,11 @@
 				<link rel="stylesheet" href="/test/deta-image.css" loading="lazy">
 
     
-			<meta id="head">
+			<?php include("/parts/head.php"); ?>  
 		</head>
 		
 		<body lang="ja">
-			<div id="header"></div>
+			<?php include("/parts/header.php"); ?>  
 							<div class="nav">
         	<input id="drawer_input" class="drawer_hidden" type="checkbox">
         	<label for="drawer_input" class="drawer_open"><span></span></label>
@@ -318,6 +318,6 @@
 			<a onclick="document.getElementById('drawer_input').checked = false;" class="nav_contrnt_cover"></a>
 			
 					</div>
-    <div id="fooder"></div>
+    <?php include("/parts/fooder.php"); ?>  
 		</body>
 		</html>
