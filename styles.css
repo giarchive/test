@@ -367,7 +367,7 @@ main .inazumafont {
 		padding: 0;
 		width: 100%;
 		background-color: var(--white6);
-		height: 10vh;
+		height: 15%;
 		z-index: 50;
 	}
 	.nav_content .nav_content_main {
