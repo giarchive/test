@@ -1,5 +1,23 @@
-$(document).ready(function(){
-$("#head").load("/parts/head.html");
-$("#header").load("/parts/header.html");
-$("#footer").load("/parts/footer.html");
+document.addEventListener('DOMContentLoaded', function() {
+fetch("/parts/header.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector(".header").innerHTML = data;
+});
+fetch("/parts/head.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector(".head").innerHTML = data;
+});
+fetch("/parts/footer.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector(".footer").innerHTML = data;
+});
 });
