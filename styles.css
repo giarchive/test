@@ -219,7 +219,7 @@ article .black {
 main .black {
 	color: black;
 }
-main .white,header a {
+main .white {
 	color: white;
 	text-decoration: none;
 }
