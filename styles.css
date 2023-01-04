@@ -115,6 +115,10 @@ html{
 body, main {
 	width: var(--content-width);
 }
+header a {
+	color: var(--black);
+	text-decoration: none;
+}
 body {
     color: var(--black1);
 	background: var(--white);
@@ -221,7 +225,6 @@ main .black {
 }
 main .white {
 	color: white;
-	text-decoration: none;
 }
 main .inazumafont {
 	font-family: 'InazumaFont', sans-serif;
