@@ -4,20 +4,20 @@ fetch("/parts/header.html")
     return response.text()
   })
   .then(data => {
-    document.querySelector(".header").innerHTML = data;
+    document.querySelector("#header").innerHTML = data;
 });
 fetch("/parts/head.html")
   .then(response => {
     return response.text()
   })
   .then(data => {
-    document.querySelector(".head").innerHTML = data;
+    document.querySelector("#head").innerHTML = data;
 });
 fetch("/parts/footer.html")
   .then(response => {
     return response.text()
   })
   .then(data => {
-    document.querySelector(".footer").innerHTML = data;
+    document.querySelector("#footer").innerHTML = data;
 });
 });
