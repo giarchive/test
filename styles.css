@@ -198,6 +198,11 @@ h1 a {
 	color: var(--black);
 	text-decoration: none;
 }
+@media screen and (max-width: 680px) {
+h1 {
+        padding: 0px 5px;
+}
+}
 body .event-time {
 	color: var(--cyan);
 }
@@ -361,6 +366,7 @@ body h6,nav h6  {
     body h3 {
         font-size: 16px;
         letter-spacing: 0;
+        padding: 0px 5px;
     }
     body h4 {
         font-size: 16px;
@@ -677,6 +683,7 @@ display: inline-block;
 }
 .tab-label:not(:last-of-type) {
   margin-right: 5px;
+   margin-top: 5px;
 }
 .tab-content {
   width: 100%;
