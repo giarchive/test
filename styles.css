@@ -115,10 +115,6 @@ html{
 body, body {
 	width: var(--content-width);
 }
-header a {
-	color: var(--black);
-	text-decoration: none;
-}
 body {
     color: var(--black1);
 	background: var(--white);
@@ -196,6 +192,10 @@ audio {
 /* テキスト */
 body a:not(.not-linkhighright), aside a:not(.black) {
 	color: var(--blue);
+	text-decoration: none;
+}
+header a {
+	color: var(--black);
 	text-decoration: none;
 }
 body .event-time {
@@ -351,6 +351,7 @@ body h6,nav h6  {
 /*フッダー*/
 footer a {
 	color: var(--yellow);
+	text-decoration: none;
 }
 footer .fa-twitter {
 	color: #00ACEE;
