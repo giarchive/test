@@ -236,15 +236,13 @@ body .inazumafont {
 	font-size: large;
 }
 /*メニュー*/
-.menu-box {
-background: var(--white1);
-}
 #menu {	
 	width: 20%;
 	position: fixed;
   top: 0;
   right: 0;
   margin: 0;
+  background: red;
 }
 /*トップ画像のタブ*/
 .tab-wrap {
