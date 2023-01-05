@@ -256,7 +256,8 @@ position: fixed;
 	height: 100%;
 	top: 0;
 	left: 0;
-	z-index: 1000; 
+	z-index: 70; 
+    visibility: hidden;
 }
 .menu-btn {
     position: fixed;
