@@ -650,8 +650,8 @@ body .applemusic {
   margin:5px 0;
 }
 .tab-label {
-  color: White;
-  background-color:lightgray;
+  color: white;
+ background-color:var(--white2);
   text-align: center;
   padding: .5em 1em;
   order: -1;
@@ -673,18 +673,7 @@ body .applemusic {
 }
 /* アクティブなタブ */
 .tab-switch:checked+.tab-label {
- background-color:#999fad;/*背景色*/
-}
-.tab-switch:checked+.tab-label:after{
-	content: "";
-	position: absolute;
-	top: 100%;
-	left: 50%;
-	margin-left: -15px;
-	border: 10px solid transparent;
-border-top:10px solid #999fad;
-	width: 0;
-	height: 0;
+ background-color:var(--white5);
 }
 .tab-switch:checked+.tab-label+.tab-content {
   height: auto;
