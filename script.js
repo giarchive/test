@@ -20,4 +20,11 @@ fetch("/parts/footer.html")
   .then(data => {
     document.querySelector("#footer").innerHTML = data;
 });
+fetch("/parts/menu.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("#menu").innerHTML = data;
+});
 });
