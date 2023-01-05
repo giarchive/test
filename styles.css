@@ -242,8 +242,9 @@ height: 100%;
 position: fixed;
     top: 0;
     right:0;
-    visibility: hidden;
-    transition: all 0.5s;
+    opacity: 0;
+  visibility: hidden;
+  transition: 1s;
   margin: 0;
   background: var(--white6);
   border-left: solid var(--black);
@@ -257,7 +258,9 @@ position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 70; 
-    visibility: hidden;
+	opacity: 0;
+  visibility: hidden;
+  transition: 1s;
 }
 .menu-btn {
     position: fixed;
@@ -302,7 +305,9 @@ position: fixed;
     display: none;
 }
 #menu-btn-check:checked ~ #menu,#menu-btn-check:checked ~ .menu-cover {
-    visibility: visible;
+    transition: 1s;
+  opacity: 1;
+  visibility: visible;
 }
 
 /*見出し*/
