@@ -301,7 +301,7 @@ position: fixed;
 #menu-btn-check {
     display: none;
 }
-#menu-btn-check:checked ~ #menu,#menu-btn-check:checked ~ #menu-cover {
+#menu-btn-check:checked ~ #menu,#menu-btn-check:checked ~ .menu-cover {
     visibility: visible;
 }
 
