@@ -261,6 +261,14 @@ color: var(--black)!important;
 	z-index: 70;
   visibility: hidden;
 }
+@media screen and (max-width: 680px) {
+#menu {
+width:100%;
+}
+.menu-cover {
+display:none;
+}
+}
 .menu-btn {
     position: fixed;
     top: 10px;
