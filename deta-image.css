@@ -1,0 +1,179 @@
+/*ロゴ*/
+#goblet-of-eonothem-surpassing-cup::before,#bloom-times::before,#plume-of-luxury::before,#song-of-life::before,#calabash-of-awakening::before,#skeletal-hat::before,#katsuragikiri-nagamasa::before,#kaguras-verity::before,#kagotsurube-isshin::before,#from-raiden-mention::before,#from-yae-mention::before,#from-tartaglia-mention::before,.life-collection::before,#ancient-forging-blueprint::before,.i-see-you::before,.vision-breakdown::before,.shouki-no-kami-icon:before,#from-nahida-mention:before,.puppet-strings:before,.character-icon:before,.skill-icon:before,.burst-icon:before,.nomal-atack:before,.shimi-chazuke:before,.constellation-one:before,.constellation-two:before,.constellation-four:before,.constellation-six:before,.elemental-breakdown::before,.dakas-bell::before,.mirror-of-mushin::before,.life-collection-old::before,.original-food-shimi-chazuke:before {
+	content: '';
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  margin: 0;
+  padding: 0;
+  background-size: contain;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
+}
+
+/* Base64変換
+https://web-toolbox.dev/tools/base64-encode-image
+*/
+
+/*本人*/
+.shouki-no-kami-icon:before {
+	background-image: url("icon/shouki-no-kami-icon.png");
+	height: 2em;
+}
+.character-icon:before {
+	background-image: url("icon/scara-icon.png");
+	height: 2em;
+}
+.shimi-chazuke:before {
+	background-image: url("icon/shinmi-chazuke.png");
+	height: 2em;
+}
+/*聖遺物*/
+#goblet-of-eonothem-surpassing-cup::before {
+	background-image: url("icon/goblet-of-eonothem-surpassing-cup.png");
+	background-size: 120%;
+}
+#bloom-times::before {
+	background-image: url("icon/bloom-times.png");
+	background-size: 120%;
+}
+
+#plume-of-luxury::before {
+	background-image: url("icon/plume-of-luxury.png");
+	background-size: 120%;
+}
+
+#song-of-life::before {
+	background-image: url("icon/song-of-life.png");
+	background-size: 120%;
+}
+
+#skeletal-hat::before {
+	background-image: url("icon/skeletal-hat.png");
+	background-size: 120%;
+}
+
+#calabash-of-awakening::before {
+	background-image: url("icon/calabash-of-awakening.png");
+	background-size: 120%;
+}
+/*武器*/
+#katsuragikiri-nagamasa::before {
+	background-image: url("icon/katsuragigiri-nagamasa.png");
+}
+#kaguras-verity::before {
+	background-image: url("icon/kaguras-verity.png");
+}
+#kagotsurube-isshin::before {
+	background-image: url("icon/kagotsurube-isshin.png");
+}
+/*言及*/
+#from-raiden-mention::before {
+	background-image: url("icon/raiden-icon.png");
+}
+#from-yae-mention::before {
+	background-image: url("icon/yae-icon.png");
+}
+#from-tartaglia-mention::before {
+	background-image: url("icon/tartaglia-icon.png");
+}
+#from-nahida-mention:before {
+	background-image: url("icon/nahida-icon.png");
+}
+/*神の目、命の星座など*/
+.life-collection::before {
+	background-image: url("icon/collection-new.png");
+	height: 2em;
+	width: 2em;
+	background-size: 100%;
+}
+.life-collection-old::before {
+	background-image: url("icon/collection-old.png");
+	height: 2em;
+	width: 1.5em;
+	background-size: 90%;
+}
+.elemental-breakdown::before {
+	background-image: url("icon/electro.png");
+	height: 1.5em;
+	width: 1.5em;
+  background-position: top left;
+}
+.vision-breakdown::before {
+	background-image: url("icon/anemo.png");
+	height: 1.5em;
+	width: 1.5em;
+  background-position: top right;
+}
+/*素材*/
+.puppet-strings::before {
+	background-image: url("icon/puppet-strings.png");
+	height: 2em;
+	background-size: 90%;
+}
+.dakas-bell::before {
+	background-image: url("icon/dakas-bell.png");
+	height: 2em;
+	background-size: 90%;
+}
+.mirror-of-mushin::before {
+	background-image: url("icon/mirror-of-mushin.png");
+	height: 2em;
+	background-size: 90%;
+}
+/*任務関連アイテム等*/
+#ancient-forging-blueprint::before {
+	background-image: url("icon/ancient-forging-blueprint.png");
+	height: 2em;
+}
+.i-see-you:before {
+	background-image: url("icon/iseeyou.png");
+	height: 1.5em;
+	width: 9em;
+}
+/*攻撃、命の星座*/
+.nomal-atack:before {
+	background-image: url("icon/nomal-atack.png");
+	height: 2em;
+}
+.skill-icon:before {
+	background-image: url("icon/skill-icon.png");
+	height: 2em;
+}
+.burst-icon:before {
+	background-image: url("icon/burst-icon.png");
+	height: 2em;
+}
+.constellation-one:before {
+	background-image: url("icon/constellation-one.png");
+	height: 2em;
+}
+.constellation-two:before {
+	background-image: url("icon/constellation-two.png");
+	height: 2em;
+}
+.constellation-four:before {
+	background-image: url("icon/constellation-four.png");
+	height: 2em;
+}
+.constellation-six:before {
+	background-image: url("icon/constellation-six.png");
+	height: 2em;
+}
+/*アイテム関連*/
+.original-food-shimi-chazuke:before {
+	background-image: url("icon/shimi-chazuke.png");
+	height: 2em;
+}
+@media (prefers-color-scheme: light) {
+	.nomal-atack:before,.skill-icon:before,.burst-icon:before,.constellation-one:before,.constellation-two:before,.constellation-four:before,.constellation-six:before {
+		filter: invert(100%);
+	}
+}
+@media (prefers-color-scheme: dark) {
+	.life-collection::before,.i-see-you::before,.life-collection-old::before {
+		filter: invert(100%);
+	}
+}

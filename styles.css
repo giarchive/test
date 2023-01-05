@@ -194,7 +194,7 @@ body a:not(.not-linkhighright), aside a:not(.black) {
 	color: var(--blue);
 	text-decoration: none;
 }
-header a {
+h1 a {
 	color: var(--black);
 	text-decoration: none;
 }
@@ -247,6 +247,9 @@ position: fixed;
   background: var(--white6);
   border-left: solid var(--black);
 	z-index: 80; 
+}
+#menu a {
+color: var(--black)!important;
 }
 .menu-cover {
 	position: fixed;
@@ -378,7 +381,7 @@ body h6,nav h6  {
 }
 /*フッダー*/
 footer a {
-	color: var(--yellow);
+	color: var(--yellow)!important;
 	text-decoration: none;
 }
 footer .fa-twitter {
@@ -650,6 +653,7 @@ body .applemusic {
   margin:5px 0;
 }
 .tab-label {
+display: inline-block; 
   color: white;
  background-color:var(--white2);
   text-align: center;
@@ -691,6 +695,7 @@ body .applemusic {
 	display: flex;
 	padding: 0;
 	margin: 0;
+	color: var(--black;)
 }
 .btn-social-flat { 
   color: var(--black1);
