@@ -194,6 +194,10 @@ audio {
 }
 
 /* テキスト */
+body a:not(.not-linkhighright), aside a:not(.black) {
+	color: var(--blue);
+	text-decoration: none;
+}
 body .event-time {
 	color: var(--cyan);
 }
@@ -212,10 +216,6 @@ body .mark {
 body .open {
 	color: var(--orange);
 	font-weight: bold;
-}
-body a:not(.not-linkhighright), aside a:not(.black) {
-	color: var(--blue);
-	text-decoration: none;
 }
 article .black {
 	color: var(--black);
