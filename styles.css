@@ -238,8 +238,6 @@ body .inazumafont {
 /*メニュー*/
 .menu-box {
 background: var(--white1);
-backdrop-filter: blur(12px);
--webkit-backdrop-filter: blur(12px);
 }
 #menu {	
 	width: 20%;
