@@ -112,7 +112,7 @@ body,header {
 html{
 	height: -webkit-fill-available;
 }
-body, main {
+body, body {
 	width: var(--content-width);
 }
 header a {
@@ -135,7 +135,7 @@ body {
 	min-height: -webkit-fill-available;
 	overflow-wrap: break-word;
 }
-main div:not(.not-margin-div),.top-text,.share-nav,.nav .nav_hidden,main cite,twitter-trend-tag {
+body div:not(.not-margin-div),.top-text,.share-nav,.nav .nav_hidden,body cite,twitter-trend-tag {
 	margin-left: 2.5vw;
 	margin-right: 2.5vw;
 }
@@ -148,7 +148,7 @@ main div:not(.not-margin-div),.top-text,.share-nav,.nav .nav_hidden,main cite,tw
 		margin-left: 2.5vw;
 		margin-right: 2.5vw;
 	}
-	main {
+	body {
 		width: 100%;
 		margin-left: 0px;
 		margin-right: 0px;
@@ -170,7 +170,7 @@ main div:not(.not-margin-div),.top-text,.share-nav,.nav .nav_hidden,main cite,tw
 input{
     -webkit-appearance: none;
 }
-main h2, main h3, main h4, main h5, main h6, blockquote,nav,img,table,th,td,tbody,iframe,cite,video {
+body h2, body h3, body h4, body h5, body h6, blockquote,nav,img,table,th,td,tbody,iframe,cite,video {
 	margin: 0;
 	padding: 0;
 }
@@ -194,39 +194,39 @@ audio {
 }
 
 /* テキスト */
-main .event-time {
+body .event-time {
 	color: var(--cyan);
 }
-main .info-scaramouche-name {
+body .info-scaramouche-name {
 	font-weight: bold;
 }
-main .info-kunikuzushi-name {
+body .info-kunikuzushi-name {
 	font-weight: bold;
 }
-main .ru {
+body .ru {
 	font-family: -apple-system, Arial, Helvetica, Gothic, sans-serif;
 }
-main .mark {
+body .mark {
 	color: var(--red);
 }
-main .open {
+body .open {
 	color: var(--orange);
 	font-weight: bold;
 }
-main a:not(.not-linkhighright), aside a:not(.black) {
+body a:not(.not-linkhighright), aside a:not(.black) {
 	color: var(--blue);
 	text-decoration: none;
 }
 article .black {
 	color: var(--black);
 }
-main .black {
+body .black {
 	color: black;
 }
-main .white {
+body .white {
 	color: white;
 }
-main .inazumafont {
+body .inazumafont {
 	font-family: 'InazumaFont', sans-serif;
 }
 /*ガチャカウンター*/
@@ -335,7 +335,7 @@ main .inazumafont {
   z-index: 98;
   opacity: 0;
 } 
-.nav_content .nav_content_main {
+.nav_content .nav_content_body {
   width: 40%;
   height: 100%;
   display: inline-block;
@@ -370,7 +370,7 @@ main .inazumafont {
 		height: 15%;
 		z-index: 50;
 	}
-	.nav_content .nav_content_main {
+	.nav_content .nav_content_body {
 		width: 100%;
 	}
 	.nav_contrnt_cover {
@@ -566,34 +566,34 @@ ul.list ul li ul li a {
 }
 
 /*見出し*/
-main h2,nav h2 {
+body h2,nav h2 {
     padding: 0.5vh 2vw;
     background-color: var(--white5);
     color: var(--black1);
     font-weight: bold;
 	margin: 2vh 0vw;
 }
-main h3,nav h3 {
+body h3,nav h3 {
     padding: 0.5vh 1vw;
 	border-bottom: solid 2px var(--scara-2);
     font-weight: bold;
     line-height: 1;
 	margin: 2vh 0vw;
 }
-main h4,nav h4 {
+body h4,nav h4 {
     padding: 0.5vh 1vw;
     font-weight: bold;
     line-height: 1.4;
 	font-size: 1.2em;
 	margin: 2vh 0vw;
 }
-main h5,nav h5 {
+body h5,nav h5 {
     font-weight: bold;
     line-height: 1.0;
 	padding: 0.25vh 1vw;
 	font-size: 1.15rem;
 }
-main h6,nav h6  {
+body h6,nav h6  {
     font-weight: bold;
     line-height: 1.4;
 	padding: 0.75vh 1vw;
@@ -603,23 +603,23 @@ main h6,nav h6  {
 	padding: 0px;
 }
 @media screen and (max-width: 680px) {
-    main h2 {
+    body h2 {
         padding: 5px 5px 5px 10px;
         font-size: 16px;
         letter-spacing: 1px;
     }
-    main h3 {
+    body h3 {
         font-size: 16px;
         letter-spacing: 0;
     }
-    main h4 {
+    body h4 {
         font-size: 16px;
 		line-height: 1.3;
     }
-    main h5 {
+    body h5 {
         font-size: 16px;
     }
-    main h6 {
+    body h6 {
         font-size: 16px;
     }
 }
@@ -713,7 +713,7 @@ blockquote .travel-log {
 	}
 }
 /*表*/
-main table:not(.character-setting-about-name-card table) {
+body table:not(.character-setting-about-name-card table) {
 	border-collapse: collapse;
 	border-spacing: 0;
 	width: 100%;
@@ -725,45 +725,45 @@ main table:not(.character-setting-about-name-card table) {
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
 }
-main table tr {
+body table tr {
 	white-space: nowrap;
 	width: 100%;
 }
-main th,main td {
+body th,body td {
 	border: solid 1px var(--white1);
 	padding: 2px 3px;
 	width: 100vw;
 	word-wrap: break-word;
 }
 
-main th {
+body th {
 	font-style: bold;
 	width: 20%;
 	padding-left: 10px;
 	padding-right: 10px;
 	background-color: var(--white6);
 }
-main td {
+body td {
 	padding-left: 10px;
 	padding-right: 10px;
 }
 @media screen and (max-width: 680px) {
-	main table {
+	body table {
 	border-spacing: 0;
 	width: 100%;
 	}
-	main th,main td {
+	body th,body td {
 		padding: 2px 3px;
 	}
 
-	main th {
+	body th {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
-	main table th {
+	body table th {
 		white-space: nowrap;
 	}
-	main td {
+	body td {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
@@ -867,7 +867,7 @@ align-self: start!important;
 	width: auto;
 }
 /*Apple Music*/
-main .applemusic {
+body .applemusic {
 	width: 100%;
 	height: 175px;
 	background:transparent;
