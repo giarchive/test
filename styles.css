@@ -665,6 +665,7 @@ display: inline-block;
   flex: 1;
   border-radius: 2px;
   position: relative;
+  white-space: nowrap;
 }
 .tab-label:not(:last-of-type) {
   margin-right: 5px;
