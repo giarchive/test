@@ -237,7 +237,7 @@ body .inazumafont {
 }
 /*メニュー*/
 .menu-box {
-background: var(--white);
+background: var(--white1);
 backdrop-filter: blur(12px);
 -webkit-backdrop-filter: blur(12px);
 }
