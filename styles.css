@@ -236,11 +236,12 @@ body .inazumafont {
 	font-size: large;
 }
 /*メニュー*/
-.menu-box {	
-	text-align: right;
-}
-#menu {
-	display: inline-block;
+#menu {	
+	width: 10%;
+	position: fixed;
+  top: 0;
+  right: 0;
+  margin: 0;
 }
 /*トップ画像のタブ*/
 .tab-wrap {
