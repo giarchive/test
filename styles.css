@@ -236,8 +236,11 @@ body .inazumafont {
 	font-size: large;
 }
 /*メニュー*/
+.menu-box {
+backdrop-filter: blur(12px);
+}
 #menu {	
-	width: 10%;
+	width: 25%;
 	position: fixed;
   top: 0;
   right: 0;
