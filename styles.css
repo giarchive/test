@@ -252,6 +252,9 @@ position: fixed;
   background: var(--white6);
   border-left: solid var(--black);
 	z-index: 80; 
+	overflow: scroll;
+	padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
 }
 #menu a {
 color: var(--black)!important;

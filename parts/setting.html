@@ -19,20 +19,40 @@
     <span class="menu-cover"></span>
 	<span id="menu"></span>
     </div> 
-<h2 id="gacha">祈願</h2>
-					<h3 id="gacha-3.3">Ver3.3 残火変相</h3>
-					<img src="/assets/img/gacha/gacha_33.webp" loading="lazy">
-					<div>
-						<p>	2022年12月7日 アップデート後〜2022/12/27 18:59</p>
-						<ul>
-							<li>☆5 久世浮傾・放浪者（風）</li>
-							<li>☆4 機求封秘・ファルザン（風）</li>
-							<li>☆4 雄々しき戎犬・ゴロー（岩）</li>
-							<li>☆4 無邪気な知恵・煙緋（炎）</li>
-						</ul>
-					</div>
-				<h4>お試し</h4>
-				<div></div>
+		<h2>設定</h2>
+<form name="frm1" class="exp01" action="dummy">
+<script type="text/javascript">
+window.onload=function() {
+var $replacement = document.getElementsByClassName( "wanderer_name" );
+for (i = 0; i < $replacement.length; i++) {
+$replacement[i].innerHTML = get_cook('cookie1');
+}
+}
+
+function get_cook(coknam) {
+  coktxt = document.cookie+";";
+  stano = coktxt.indexOf(coknam);
+  if (stano != -1){
+    endno = coktxt.indexOf(";",stano);
+    txt0 = unescape(coktxt.substring(stano+coknam.length+1,endno));
+  }else{
+    txt0 = "";
+  }
+  return txt0;
+}
+
+function sav_cook(coknam) {
+  txt0 = document.frm1['txt1'].value;
+  day0 = new Date();
+  day0.setTime(day0.getTime()+604800000);
+  endday = day0.toGMTString();
+  document.cookie = coknam+"="+escape(txt0)+";expires="+endday;
+}
+</script>
+<input name="txt1" type="text" value="" tabindex="0" accesskey="i"><br>
+<input type="button" value="保存" onclick="sav_cook('cookie1')" onkeypress="sav_cook('cookie1')" tabindex="1" accesskey="1"><br>
+<span class="wanderer_name">放浪者</span>
+</form>
     <div id="footer" class="not-margin-div"></div>
 <script type="text/javascript">
 window.onload=function() {
@@ -52,7 +72,6 @@ function get_cook(coknam) {
     txt0 = "";
   }
   return txt0;
-}</script>  
-		<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+}</script> 
 </body>
 		</html>

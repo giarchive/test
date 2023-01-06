@@ -13,7 +13,6 @@
 						</head>
 		
 		<body lang="ja">
-			<meta charset="UTF-8"><meta name="robots" content="noindex,nofollow,noarchive" />
 <div id="header" class="not-margin-div"></div> 
 <div class="hamburger-menu">
         <input type="checkbox" id="menu-btn-check">
@@ -22,11 +21,6 @@
 	<span id="menu"></span>
     </div> 
 		<h2 id="boss"><spam class="shouki-no-kami-icon"></span>ボス「正機の神」七葉寂照秘密主</h2>
-					<!--<div class="youtube not-margin-div boss-video">
-						<p>Youtubeを表示できません。</p>
-					<iframe width="1920" height="1080" src="https://www.youtube.com/embed/GtR_JiHlvBM?start=520"  title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope;" loading="lazy"></iframe>
-				</div>-->
-				<img src="https://cdn-ak.f.st-hatena.com/images/fotolife/n/neutron-star/20221102/20221102191958.jpg" loading="lazy">
 				<blockquote>
 				<p class="shouki-no-kami-text">スメール教令院に属する六大学院の力を集めて創った人造正機神。真の神に匹敵するほどの力を持つ。<br>
 世の人がこれを偽りの神と呼ぶならば、彼らは「神」という言葉の真意を理解していない。<br>
@@ -256,7 +250,26 @@
 		<td>戦闘終了</td>
 	</tr>
 </table>
-    <div id="footer" class="not-margin-div"></div>  
+    <div id="footer" class="not-margin-div"></div>
+<script type="text/javascript">
+window.onload=function() {
+var $replacement = document.getElementsByClassName( "wanderer_name" );
+for (i = 0; i < $replacement.length; i++) {
+$replacement[i].innerHTML = get_cook('cookie1');
+}
+}
+
+function get_cook(coknam) {
+  coktxt = document.cookie+";";
+  stano = coktxt.indexOf(coknam);
+  if (stano != -1){
+    endno = coktxt.indexOf(";",stano);
+    txt0 = unescape(coktxt.substring(stano+coknam.length+1,endno));
+  }else{
+    txt0 = "";
+  }
+  return txt0;
+}</script>  
 		<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 		</html>

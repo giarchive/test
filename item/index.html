@@ -12,7 +12,6 @@
 						</head>
 		
 		<body lang="ja">
-			<meta charset="UTF-8"><meta name="robots" content="noindex,nofollow,noarchive" />
 <div id="header" class="not-margin-div"></div> 
 <div class="hamburger-menu">
         <input type="checkbox" id="menu-btn-check">
@@ -345,7 +344,7 @@
     						<label for="label1-rather-aged-notes"><i class="fa-solid fa-circle-plus"></i>&nbsp;手紙の位置</label>
     						<input type="checkbox" id="label1-rather-aged-notes"/>
    								 <div class="hidden_show-rather-aged-notes not-margin-div">
-									 <img src="https://cdn-ak.f.st-hatena.com/images/fotolife/n/neutron-star/20220812/20220812030002.png"  loading="lazy">
+									 <img src="/assets/img/tatarasuna_maps_rather-aged-notes.webp"  loading="lazy">
 						<div>
 							<p>◉:武器庫、⚿:鍵の場所、⌂:借景ノ館</p>
 							<p>①:借景ノ館を出てすぐの北方向にある古屋の上<br>
@@ -707,6 +706,27 @@
 </blockquote>
 </div>
 </div>
+<h3 id="an-appellative-stroke">新名撰筆</h3>
+<blockquote>
+ある者の「名前」を書き換える筆。<br>
+「名前」を書き換えた後は、変更することができない。
+</blockquote>
+<blockquote>
+<span style="color:#D3BC8E">【名前変更ルール】</span><br>
+旅人さんは魔神任務間章：伽藍に落ちてを経由するか、アイテム「新名撰筆」を使用することで、「久世浮傾·放浪者（風）」の「名前」を書き換えることができます。<br>
+注意：一部の名称は「名前」の書き換えに使用できません。<br>
+「名前」の書き換えが完了した後、ゲームの一部画面で変更された名前が表示されます。<br>
+<span style="color:#D3BC8E">「名前」の書き換え回数には制限がありますため、慎重に検討を行った上でご利用ください。</span><br>
+<br>
+<span style="color:#D3BC8E">【注意事項】</span><br>
+旅人さんが「名前」の書き換えをご利用いただくにあたり、利用規約に同意していただく必要があります。また、良好なゲーム環境を維持するため、下記の行為を一切行わず、また参加しないことにご承諾いただく必要があります。<br>
+1.あらゆる人種、性別、宗教、性的指向、民族、政治、地域などの差別的内容の作成。<br>
+2.いかなるプレイヤー、団体を虐げる内容または侮辱的な内容の作成。<br>
+3.その他、利用規約で禁止されている内容や不適切な内容の作成。<br>
+<br>
+上記の規約を遵守いただけなかった場合、旅人さんのゲームサービスが制限される可能性があります。制限の中にはミュート、名前のリセット、強制的ログアウト、ログイン制限、アカウント停止などを含みますが、これらに限りません。<br>
+また、上記の状況が発覚した場合、「通報」ボタンよりカスタマーサポートまでご連絡いただきますようお願いいたします。
+</blockquote>
 		<h2 id="related-item">キャラクター関連アイテム</h2>
 								<h3 id="original-food-shimi-chazuke" class="original-food-shimi-chazuke">オリジナル料理「真味茶漬け」</h3>
 								<div><p>“チーム全員の与える治療効果+25%、継続時間300秒。マルチプレイ中、自分のキャラクターにのみ有効。”</p></div>
@@ -716,7 +736,7 @@
 							</p>
 						</blockquote>
 								<h3 id="name-card-item" class="name-card-item">名刺「放浪者·憂き世の歌」</h3>
-								<img src="https://giarchive.github.io/3.2/Img/B3D9DBCE-084B-4A58-970B-201C23AEBA99.png" loading="lazy" alt="名刺"><br>
+								<img src="/assets/img/UI/namecard_wanderer.webp" loading="lazy" alt="名刺"><br>
 								<cite>画像引用:<a target="_blank" href="https://genshin-impact.fandom.com/wiki/Wanderer/Media">Fandom</a></cite>
 								<blockquote>
 									<p>
@@ -726,13 +746,31 @@
 								</blockquote>
 					<h2 id="skin">スキン</h2>
 							<h3 id="a-void-of-wrathful-emptiness" class="a-void-of-wrathful-emptiness">寂忿空相</h3>
-							<div><p>この「放浪者」はプレイヤーが設定した名前になる。</p></div>
 								<blockquote>
 									<p>
-										放浪者の衣装。修験者の常服。その笠は雨をしのぐ場所を放浪者に与えるが、心の中で轟く風と雷には意味をなさない。
+										<span class="wanderer_name">放浪者</span>の衣装。修験者の常服。その笠は雨をしのぐ場所を放浪者に与えるが、心の中で轟く風と雷には意味をなさない。
 									</p>
 								</blockquote>
-    <div id="footer" class="not-margin-div"></div>  
+    <div id="footer" class="not-margin-div"></div>
+<script type="text/javascript">
+window.onload=function() {
+var $replacement = document.getElementsByClassName( "wanderer_name" );
+for (i = 0; i < $replacement.length; i++) {
+$replacement[i].innerHTML = get_cook('cookie1');
+}
+}
+
+function get_cook(coknam) {
+  coktxt = document.cookie+";";
+  stano = coktxt.indexOf(coknam);
+  if (stano != -1){
+    endno = coktxt.indexOf(";",stano);
+    txt0 = unescape(coktxt.substring(stano+coknam.length+1,endno));
+  }else{
+    txt0 = "";
+  }
+  return txt0;
+}</script>  
 		<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 		</html>

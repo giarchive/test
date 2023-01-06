@@ -13,7 +13,6 @@
 						</head>
 		
 		<body lang="ja">
-			<meta charset="UTF-8"><meta name="robots" content="noindex,nofollow,noarchive" />
 <div id="header" class="not-margin-div"></div> 
 <div class="hamburger-menu">
         <input type="checkbox" id="menu-btn-check">
@@ -24,18 +23,18 @@
 		<h2 id="official-a">広告</h2>
 			<h3 id="a-3.1">Ver3.1広告</h3>
 			<h4 id="a-tokyo-jr-ikebukuro">東京都 JR池袋</h4>
-			<img src="https://cdn-ak.f.st-hatena.com/images/fotolife/n/neutron-star/20221013/20221013184755.jpg" translate="no" loading="lazy" >
+			<img src="/assets/img/31_ikebukuro.jpeg" translate="no" loading="lazy" >
 			<cite>引用: <a target="_blank" href="https://twitter.com/paimon_genshin7/status/1580488918549397504">Twitter(パイモン)</a></cite>
 			
-			<h4 id="a-hangzhou-yintai-commercial-street">杭州 杭州湖滨银泰商业街</h4>
-			<img src="https://cdn-ak.f.st-hatena.com/images/fotolife/n/neutron-star/20221013/20221013190116.jpg" translate="no" loading="lazy" class="half-image">
+			<h4 id="hangzhou-yintai-commercial-street">杭州 杭州电子屏</h4>
+			<img src="/assets/img/31_hangzhou.jpg" translate="no" loading="lazy" class="half-image">
 			<br><cite>引用: <a target="_blank" href="https://b23.tv/N2BlY8o">哔哩哔哩(派蒙的工作笔记)</a></cite>
 			<h3 id="a-32">Ver3.2広告</h3>
 			<img src="https://raw.githubusercontent.com/giarchive/3.2/body/Img/CFD760EF-091E-4896-B6EE-11E8B8C80A7B.webp" class="half-image" loading="lazy">
 			<br><cite>引用: <a target="_blank" href="https://www.reddit.com/r/Genshin_Impact/comments/yhbw1s/genshin_in_a_malaysian_newspaper/">Reddit</a></cite>
 			<h3 id="a-33">Ver3.3広告</h3>
 			<h4 id="a-tokyo-akihabara-33">東京都</h4>
-				<img src="https://giarchive.github.io/3.2/Img/4EEBCDCB-078B-4774-B27C-4000968A9756.jpeg" class="half-image" loading="lazy">
+				<img src="/assets/img/ads/wanderer_akiba.webp" class="half-image" loading="lazy">
 				<br><cite>画像提供：<a target="_blank" href="https://twitter.com/nero_hanken/status/1598239080709763074">大倉ねろたさん(@nero_hanken)</a></cite>
 				<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">原神の円柱広告に放浪者(スカラマシュ)とファルザンが追加されてました！ <a href="https://t.co/VmRZG6s56f">pic.twitter.com/VmRZG6s56f</a></p>&mdash; かせいさん (@kaseisanGENSHIN) <a href="https://twitter.com/kaseisanGENSHIN/status/1603759220377387008?ref_src=twsrc%5Etfw">December 16, 2022</a></blockquote>
 				<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">金曜日お疲れさま！<br>がんばった旅人に新しい広告のおすそわけだ！<a href="https://twitter.com/hashtag/%E5%8E%9F%E7%A5%9E?src=hash&amp;ref_src=twsrc%5Etfw">#原神</a> <a href="https://t.co/O9s914REtm">pic.twitter.com/O9s914REtm</a></p>&mdash; パイモン (@paimon_genshin7) <a href="https://twitter.com/paimon_genshin7/status/1603713699578974208?ref_src=twsrc%5Etfw">December 16, 2022</a></blockquote>
@@ -54,7 +53,26 @@
 				<blockquote class="twitter-tweet" data-theme="dark"><p lang="ja" dir="ltr">⭐魅力的なストーリー<br>🌈自由に探索できる世界<br>✨4キャラによるチーム編成<br>🎇元素を駆使した爽快戦闘<br><br>今すぐプレイ！</p>&mdash; 原神（Genshin）公式 (@Genshin_7) <a href="https://twitter.com/Genshin_7/status/1610162802404253696?ref_src=twsrc%5Etfw">January 3, 2023</a></blockquote>
 				<blockquote class="twitter-tweet" data-theme="dark"><p lang="ja" dir="ltr">歌仙逸話</p>&mdash; 原神（Genshin）公式 (@Genshin_7) <a href="https://twitter.com/Genshin_7/status/1610173862251220993?ref_src=twsrc%5Etfw">January 3, 2023</a></blockquote>
 			</div>
-    <div id="footer" class="not-margin-div"></div>  
+    <div id="footer" class="not-margin-div"></div>
+<script type="text/javascript">
+window.onload=function() {
+var $replacement = document.getElementsByClassName( "wanderer_name" );
+for (i = 0; i < $replacement.length; i++) {
+$replacement[i].innerHTML = get_cook('cookie1');
+}
+}
+
+function get_cook(coknam) {
+  coktxt = document.cookie+";";
+  stano = coktxt.indexOf(coknam);
+  if (stano != -1){
+    endno = coktxt.indexOf(";",stano);
+    txt0 = unescape(coktxt.substring(stano+coknam.length+1,endno));
+  }else{
+    txt0 = "";
+  }
+  return txt0;
+}</script>  
 		<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 		</html>
