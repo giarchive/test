@@ -255,6 +255,7 @@ position: fixed;
 }
 #menu a {
 color: var(--black)!important;
+font-size: large;
 }
 .menu-cover {
 	position: fixed;
@@ -581,6 +582,7 @@ margin: 0.5vw!important;
 padding: 0!important;
 max-width: calc(100% - 2vw)!important;
 align-self: start!important;
+display: inline-block;
 }
 @media screen and (max-width: 680px) {
 	.tweets {
